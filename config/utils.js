@@ -12,7 +12,7 @@ module.exports = {
         return pages.map(page => {
             return new HTMLWebpackPlugin({
                 filename: page.replace('hbs', 'html'),
-                template: `${paths.src}\\views\\pages\\${page}`,
+                template: `${paths.src}\/views\/pages\/${page}`,
                 meta: {
                     charset: {
                         charset: 'utf-8',
