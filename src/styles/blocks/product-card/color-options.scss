@@ -1,0 +1,50 @@
+.color-options {
+    &__list {
+        display: flex;
+    }
+
+    &__item-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border: 1px solid $gray-250;
+        border-radius: 50%;
+
+        @include media-breakpoint-up(xl) {
+            width: 32px;
+            height: 32px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+
+        &.active,
+        &:not(.disabled):hover {
+            cursor: pointer;
+            border-color: $primary;
+        }
+
+        &.disabled {
+            opacity: 0.3;
+        }
+    }
+
+    &__item {
+        width: 15px;
+        height: 15px;
+        border-radius: inherit;
+
+        @include media-breakpoint-up(xl) {
+            width: 23px;
+            height: 23px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            left: 3.5px;
+        }
+    }
+}

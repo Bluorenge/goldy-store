@@ -1,0 +1,46 @@
+.logo {
+    display: inline-block;
+
+    @include media-breakpoint-up(sm) {
+        width: 133px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 184px;
+    }
+
+    &__top-wrap {
+        font-size: 16px;
+        font-family: $font-family-serif;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: -5px;
+            font-size: 23px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 32px;
+        }
+    }
+
+    &__yellow-text {
+        color: $yellow-600;
+    }
+
+    &__bottom-text {
+        padding-left: 2px;
+        color: $gray-logo;
+        font-family: $font-third;
+        font-size: 6px;
+        letter-spacing: 2.375px;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 8px;
+            letter-spacing: 3.75px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 14px;
+        }
+    }
+}

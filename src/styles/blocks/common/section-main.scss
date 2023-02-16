@@ -1,0 +1,62 @@
+.section-main {
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 7.5rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.5rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 40px;
+        }
+    }
+
+    &__see-all-wrap {
+        display: flex;
+        margin-bottom: 0.25rem;
+        color: $primary;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__see-all-text {
+        margin-right: 0.75rem;
+        font-size: 14px;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 1rem;
+        }
+    }
+
+    &__see-all-icon-wrap {
+        display: flex;
+        align-items: center;
+        width: 20px;
+
+        @include media-breakpoint-up(xl) {
+            width: 27px;
+        }
+
+        svg {
+            width: 100%;
+        }
+    }
+}

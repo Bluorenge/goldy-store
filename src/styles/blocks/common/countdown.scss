@@ -1,0 +1,63 @@
+.countdown {
+    display: flex;
+    padding: 8px 10px;
+    background-color: $gray-100;
+
+    @include media-breakpoint-up(xl) {
+        padding: 12px 14px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 40px;
+        padding: 5px 0;
+        border: 1px solid $gray-350;
+        background-color: $white;
+        text-align: center;
+
+        @include media-breakpoint-up(xl) {
+            width: 52px;
+        }
+
+        &:not(:last-child) {
+            position: relative;
+            margin-right: 8px;
+
+            @include media-breakpoint-up(xl) {
+                margin-right: 1.25rem;
+            }
+
+            &::after {
+                content: ":";
+                position: absolute;
+                top: 13%;
+                right: -7px;
+
+                @include media-breakpoint-up(xl) {
+                    right: -25%;
+                }
+            }
+        }
+    }
+
+    &__value {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 1rem;
+        }
+    }
+
+    &__desc {
+        font-size: 9px;
+        font-weight: 300;
+        line-height: 1;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 11px;
+        }
+    }
+}

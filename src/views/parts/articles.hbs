@@ -1,0 +1,42 @@
+<section class="section-main container">
+    <div class="row row-cols-auto align-items-end mb-2">
+        <div class="col">
+            <h2 class="section-main__title">Статьи</h2>
+        </div>
+
+        <div class="col ms-auto">
+            <a href="#" class="section-main__see-all-wrap">
+                <span class="section-main__see-all-text">Читать все</span>
+
+                <div class="section-main__see-all-icon-wrap">
+                    <svg width="27" height="12">
+                        <use href="img/svg/sprite.symbol.svg#arrow-right-long"></use>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <ul class="row g-2">
+        <li class="col-6 col-md-3">
+            {{>./articles/article-card.hbs imgName="article-1" date="21 сентября 2021" title="Обручальные кольца: тренды
+            2021"}}
+        </li>
+
+        <li class="col-6 col-md-3">
+            {{>./articles/article-card.hbs imgName="article-2" date="25 сентября 2021" title="Главные ювелирные тренды
+            года"}}
+        </li>
+
+        <li class="col-6 col-md-3">
+            {{>./articles/article-card.hbs imgName="article-3" date="21 сентября 2021" title="Жемчуг: 7 малоизвестных
+            фактов о культовом украшении"}}
+        </li>
+
+        <li class="col-6 col-md-3">
+            {{>./articles/article-card.hbs imgName="article-4" date="21 сентября 2021" title="Как отличить золото от
+            подделки: 10 практических
+            советов"}}
+        </li>
+    </ul>
+</section>

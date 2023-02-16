@@ -1,0 +1,146 @@
+.promo-sale-card {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 160px;
+    background-color: $secondary;
+    background-position: -9.25rem 1.5rem;
+    background-size: 110%;
+    @include bg-diamon;
+
+    @include media-breakpoint-up(sm) {
+        height: 180px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 200px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 245px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 290px;
+    }
+
+    &__left-content {
+        z-index: 20;
+        padding-top: 2rem;
+        margin-right: 1rem;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 3rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 4.75rem;
+        }
+    }
+
+    &__title {
+        padding-left: 0.5rem;
+        margin-bottom: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 10px;
+        width: 120px;
+
+        @include media-breakpoint-up(sm) {
+            width: 180px;
+            padding-left: 1rem;
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 200px;
+            font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 235px;
+            padding-left: 1.5rem;
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 20px;
+            line-height: 2rem;
+        }
+    }
+
+    &__sale-procent-wrap {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 1rem;
+        font-size: 12px;
+        font-weight: 600;
+        color: $white;
+
+        @include media-breakpoint-up(sm) {
+            padding: 0 26px;
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 20px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 24px;
+        }
+    }
+
+    &__sale-procent {
+        margin-left: 8px;
+        font-size: 1rem;
+
+        @include media-breakpoint-up(sm) {
+            margin-left: 13px;
+            font-size: 24px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 30px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 36px;
+            line-height: 52px;
+        }
+    }
+
+    &__img-wrap {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 45%;
+        width: 180px;
+        height: 180px;
+
+        picture,
+        img {
+            height: 100%;
+            object-fit: contain;
+
+            @include media-breakpoint-up(lg) {
+                height: auto;
+            }
+        }
+    }
+
+    &--diamond &__img-wrap {
+        top: -8%;
+        left: 59%;
+
+        @include media-breakpoint-up(sm) {
+            top: -14%;
+        }
+    }
+
+    &--engagement-rings &__img-wrap {
+        @include media-breakpoint-up(sm) {
+            top: 15%;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.bg-red-600 {
+    background-color: $red-600;
+}
+
+.bg-teal-700 {
+    background-color: $teal-700;
+}
+
+.bg-orange-300 {
+    background-color: $orange-300;
+}
+
+.bg-orange-500 {
+    background-color: $orange-500;
+}
+
+.bg-green-200 {
+    background-color: $green-200;
+}
+
+.bg-yellow-500 {
+    background-color: $yellow-500;
+}
+
+.bg-yellow-600 {
+    background-color: $yellow-600;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+}
+
+.bg-diamond {
+    @include bg-diamon;
+}
+
+.reset-style {
+    @include reset;
+}
+
+.hover-gray-500 {
+    &:hover,
+    &:hover svg {
+        color: $gray-500;
+    }
+}
+
+.hover-red-600 {
+    &:hover,
+    &:hover svg {
+        color: $red-600;
+    }
+}
+
+.active-red-600 {
+    &:active,
+    &:active svg {
+        color: $red-600;
+    }
+}

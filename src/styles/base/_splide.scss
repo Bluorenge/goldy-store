@@ -1,0 +1,164 @@
+@import "../../node_modules/@splidejs/splide/dist/css/splide-core.min.css";
+
+.splide__arrow {
+    @include reset;
+    pointer-events: all;
+
+    &:hover,
+    &[disabled] {
+        color: $gray-400;
+    }
+}
+
+.splide__arrow--rounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: $primary;
+
+    @include media-breakpoint-up(lg) {
+        width: 42px;
+        height: 42px;
+        padding: 14px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        width: 54px;
+        height: 54px;
+        padding: 0;
+    }
+
+    svg {
+        transition: all 0.3s;
+    }
+
+    &:not([disabled]):hover {
+        background-color: $gray-100;
+        color: inherit;
+    }
+
+    &:not([disabled]).splide__arrow--next:active svg {
+        transform: translateX(10px);
+    }
+
+    &:not([disabled]).splide__arrow--prev:active svg {
+        transform: translateX(-10px);
+    }
+
+    &[disabled] {
+        color: $gray-400;
+        border-color: $gray-400;
+    }
+}
+
+.splide__pagination li {
+    line-height: 20px;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+.splide__pagination__page {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    background-color: $white;
+    border: 1px solid $primary;
+    border-radius: 50%;
+
+    &.is-active {
+        background-color: $primary;
+    }
+}
+
+.splide--slider-main {
+    .splide__arrows {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 calc(0.5rem + 10px);
+        pointer-events: none;
+
+        @include media-breakpoint-up(lg) {
+            padding: 0 calc(1.5rem + 10px);
+        }
+    }
+
+    .splide__pagination {
+        position: absolute;
+        bottom: 0.25rem;
+        width: calc(100% - 20px);
+
+        @include media-breakpoint-up(sm) {
+            bottom: 0.5rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            bottom: 1.5rem;
+        }
+    }
+}
+
+.splide--sale {
+    .splide__track-wrap:hover {
+        z-index: 1000;
+        position: relative;
+        max-height: 251.5px;
+
+        @include media-breakpoint-up(md) {
+            max-height: 272px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-height: 336.5px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-height: 366.5px;
+        }
+    }
+}
+
+.splide--sale-promo {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.splide--product-sale-card-gallery {
+    .splide__slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .splide__pagination {
+        position: absolute;
+        bottom: 0.25rem;
+        width: 100%;
+    }
+}
+
+.splide--product-day-card-gallery {
+    .splide__arrows {
+        position: absolute;
+        top: 48%;
+        left: 5%;
+        display: flex;
+        justify-content: space-between;
+        width: 91%;
+
+        @include media-breakpoint-up(xxl) {
+            width: 94%;
+        }
+    }
+}

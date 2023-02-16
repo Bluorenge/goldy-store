@@ -1,0 +1,57 @@
+.badge {
+    min-width: 35px;
+    background-color: $gray-200;
+    font-size: 9px;
+
+    @include media-breakpoint-up(lg) {
+        min-width: 50px;
+        font-size: 12px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 13px;
+    }
+
+    &--tab {
+        @include bg-primary-state;
+
+        color: $primary;
+        border-radius: 21px;
+
+        padding: 0.5rem 1rem;
+
+        font-weight: 400;
+        cursor: pointer;
+
+        @include media-breakpoint-up(xl) {
+            padding: 13px 30px;
+            font-size: 14px;
+        }
+    }
+
+    &--tab.badge--active {
+        background-color: $primary;
+        color: $white;
+    }
+}
+
+.small-badge {
+    position: absolute;
+    top: -2px;
+    left: 14px;
+    padding: 0 2px;
+    border-radius: 50%;
+
+    background-color: $red-400;
+    color: $white;
+    font-size: 7px;
+    line-height: 13px;
+    font-weight: 700;
+
+    @include media-breakpoint-up(lg) {
+        left: 18px;
+        padding: 0 3.125px;
+        font-size: 10px;
+        line-height: 19px;
+    }
+}

@@ -1,0 +1,43 @@
+.sizes-options {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 40px;
+        height: 24px;
+        margin-bottom: 1rem;
+        border: 1px solid $gray-250;
+        text-align: center;
+        font-size: 12px;
+        line-height: 24px;
+
+        @include media-breakpoint-up(xl) {
+            width: 50px;
+            height: 32px;
+            font-size: 14px;
+            line-height: 32px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+
+        &:active,
+        &.active {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+
+        &:not(.disabled):hover {
+            border: 1px solid $primary;
+            cursor: pointer;
+        }
+
+        &.disabled {
+            opacity: 0.3;
+        }
+    }
+}

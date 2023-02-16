@@ -1,0 +1,99 @@
+<header class="header container">
+    <div class="row row-cols-auto align-items-center gx-lg-4 gx-xl-5 gx-xxl-4">
+        <div class="col header__location-wrap">
+            <div class="dropdown">
+                <button class="dropdown-toggle header__location-btn hover-gray-500" type="button"
+                    data-bs-toggle="dropdown" data-bs-offset="0,10" aria-expanded="false">
+                    <div class="header__location-icon-wrap">
+                        <svg width="12" height="16">
+                            <use href="img/svg/sprite.symbol.svg#map"></use>
+                        </svg>
+                    </div>
+                    <span class="header__location-btn-text text-primary">Санкт-Петербург</span>
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item active">Санкт-Петербург</button>
+                    </li>
+
+                    <li>
+                        <button class="dropdown-item">Москва</button>
+                    </li>
+
+                    <li>
+                        <button class="dropdown-item">Нижний Новгород</button>
+                    </li>
+
+                    <li>
+                        <button class="dropdown-item">Ростов-на-Дону</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col header__telephone-wrap">
+            <div class="d-flex hover-gray-500">
+                <div class="header__telephone-icon-wrap">
+                    <svg width="16" height="16">
+                        <use href="img/svg/sprite.symbol.svg#phone"></use>
+                    </svg>
+                </div>
+
+                <a class="header__telephone-text text-primary" href="tel:+88007852535">8 800 785-25-35</a>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-auto header__logo-wrap">
+            <div class="logo">
+                <div class="logo__top-wrap">
+                    <span class="logo__yellow-text">Goldy</span>
+                    <span>Store</span>
+                </div>
+
+                <div class="logo__bottom-text">ювелирный магазин</div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-auto header__profile-links">
+            <a class="header__sign-in-link" href="#">Вход</a>
+            <a class="header__register-link" href="#">Регистрация</a>
+        </div>
+
+        <div class="col header__store-actions">
+            <a class="header__store-action" href="#">
+                <div class="header__store-action-icon-wrap">
+                    <svg width="20" height="20">
+                        <use href="img/svg/sprite.symbol.svg#favorite-stroke"></use>
+                    </svg>
+
+                    <span class="small-badge">
+                        23
+                        <span class="visually-hidden">количество избранного</span>
+                    </span>
+                </div>
+            </a>
+
+            <a class="header__store-action" href="#">
+                <div class="header__store-action-icon-wrap">
+                    <svg width="20" height="20">
+                        <use href="img/svg/sprite.symbol.svg#chart"></use>
+                    </svg>
+                </div>
+            </a>
+
+            <a class="header__store-action" href="#">
+                <div class="header__store-action-icon-wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" width="20" height="20">
+                        <mask id="a" fill="#fff">
+                            <rect width="16" height="13" x="2" y="5" rx="1" />
+                        </mask>
+                        <rect width="16" height="13" x="2" y="5" stroke="currentColor" stroke-width="3.2" mask="url(#a)"
+                            rx="1" />
+                        <path stroke="currentColor" stroke-width="1.6" d="M6 9V6a4 4 0 0 1 4-4 4 4 0 0 1 4 4v3" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>

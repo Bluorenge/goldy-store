@@ -1,0 +1,17 @@
+<div class="row slide-main">
+    <div class="col slide-main__left-content">
+        <p class="slide-main__promo-sale">{{promoSale}}</p>
+        <span class="slide-main__promo-product">{{promoProductName}}</span>
+        <button class="btn btn-primary btn-lg">Подробнее</button>
+    </div>
+
+    <div class="col slide-main__right-content">
+        <picture>
+            <source type="image/webp" srcset="
+                img/{{imgName}}.webp    1x,
+                img/{{imgName}}@2x.webp 2x
+            " />
+            <img src="img/{{imgName}}.png" srcset="img/{{imgName}}@2x.png 2x" class="img-fluid" alt="{{imgName}}" />
+        </picture>
+    </div>
+</div>

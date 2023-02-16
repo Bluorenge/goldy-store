@@ -1,0 +1,141 @@
+<div class="product-sale-card">
+    <div class="product-sale-card__top-wrap">
+        {{#if isSale}}
+        <div class="product-sale-card__promo-wrap">
+            <span class="badge bg-gray-700">
+                Sale
+            </span>
+        </div>
+        {{/if}}
+
+        <div class="product-sale-card__actions-wrap">
+            <button class="product-sale-card__action hover-gray-500 active-red-600">
+                <svg width="24" height="24">
+                    <use href="img/svg/sprite.symbol.svg#heart_fill"></use>
+                </svg>
+            </button>
+
+            <button class="product-sale-card__action hover-gray-500">
+                <svg width="24" height="24">
+                    <use href="img/svg/sprite.symbol.svg#eyes"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="splide splide--product-sale-card-gallery mb-1_25">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="product-sale-card__gallery-img-wrap">
+                            <picture>
+                                <source type="image/webp" srcset="
+                                img/sales/{{img-name}}.webp    1x,
+                                img/sales/{{img-name}}@2x.webp 2x
+                            " />
+                                <img src="img/sales/{{img-name}}.png" srcset="img/sales/{{img-name}}@2x.png 2x"
+                                    alt="sale" class="img-fluid" />
+                            </picture>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="product-sale-card__gallery-img-wrap">
+                            <picture>
+                                <source type="image/webp" srcset="
+                                img/sales/{{img-name}}.webp    1x,
+                                img/sales/{{img-name}}@2x.webp 2x
+                            " />
+                                <img src="img/sales/{{img-name}}.png" srcset="img/sales/{{img-name}}@2x.png 2x"
+                                    alt="sale" class="img-fluid" />
+                            </picture>
+                        </div>
+                    </li>
+
+                    <li class="splide__slide">
+                        <div class="product-sale-card__gallery-img-wrap">
+                            <picture>
+                                <source type="image/webp" srcset="
+                                img/sales/{{img-name}}.webp    1x,
+                                img/sales/{{img-name}}@2x.webp 2x
+                            " />
+                                <img src="img/sales/{{img-name}}.png" srcset="img/sales/{{img-name}}@2x.png 2x"
+                                    alt="sale" class="img-fluid" />
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product-sale-card__price-wrap price">
+            <span class="price__value">
+                {{price}} ₽
+            </span>
+
+            {{#if isSale}}
+            <span class="price__value-old">
+                65 000 ₽
+            </span>
+            <span class="price__badge badge bg-red-600">
+                -45%
+            </span>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="product-sale-card__body">
+        <a href="#" class="product-sale-card__link">
+            Стильное кольцо из белого золота c бриллиантами
+        </a>
+    </div>
+
+    <div class="product-sale-card__options-group">
+        <div class="dropdown product-sale-card__options-wrap">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Белое золото
+            </button>
+
+            <ul class="dropdown-menu">
+                <li>
+                    <button class="dropdown-item active">
+                        Белое золото
+                    </button>
+                </li>
+                <li>
+                    <button class="dropdown-item">
+                        Желтое золото
+                    </button>
+                </li>
+                <li>
+                    <button class="dropdown-item">
+                        Серебро
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown product-sale-card__options-wrap">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Размер: 16
+            </button>
+
+            <ul class="dropdown-menu">
+                <li>
+                    <button class="dropdown-item active">
+                        16
+                    </button>
+                </li>
+                <li>
+                    <button class="dropdown-item">
+                        18
+                    </button>
+                </li>
+                <li>
+                    <button class="dropdown-item">
+                        20
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

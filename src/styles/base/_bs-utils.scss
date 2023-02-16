@@ -1,0 +1,111 @@
+$font-sizes: (
+    // 1: 40px,
+    2: 40px,
+    3: 32px,
+    4: 16px,
+    5: 14px,
+    6: 13px
+);
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    0_5: 0.5rem,
+    0_75: 0.75rem,
+    0_625: 0.625rem,
+    1: 1rem,
+    1_25: 1.25rem,
+    1_5: 1.5rem,
+    1_75: 1.75rem,
+    2: 2rem,
+    2_5: 2.5rem,
+    3: 3rem,
+    3_25: 3.25rem,
+    4: 4rem,
+    5: 5rem,
+    6: 6rem,
+    7: 7rem,
+    7_25: 7.25rem,
+    7_5: 7.5rem,
+    7_75: 7.75rem,
+    8: 8rem,
+    9: 9rem,
+    10: 10rem,
+    10_5: 10.5rem,
+    11: 11rem,
+    12: 12rem,
+    13: 13rem,
+);
+
+$grid-gutter-width: 1.5rem;
+$gutters: (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: 3.5rem,
+);
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "font-size": (
+            rfs: true,
+            property: font-size,
+            class: fs,
+            values: $font-sizes,
+        ),
+        "margin-bottom": (
+            responsive: true,
+            property: margin-bottom,
+            class: mb,
+            values: $spacers,
+        ),
+        "margin-end": (
+            responsive: true,
+            property: margin-right,
+            class: me,
+            values:
+            map-merge(
+                $spacers,
+                (
+                    auto: auto,
+                )
+            ),
+        ),
+        "padding-top": (
+            responsive: true,
+            property: padding-top,
+            class: pt,
+            values: $spacers,
+        ),
+        "padding-end": (
+            responsive: true,
+            property: padding-right,
+            class: pe,
+            values: $spacers,
+        ),
+        "padding-start": (
+            responsive: true,
+            property: padding-left,
+            class: ps,
+            values: $spacers,
+        ),
+        "background-color": (
+            property: background-color,
+            class: bg-gray,
+            values: $grays,
+        ),
+    )
+);
+
+// @each $key, $value in $grays {
+//     .bg-gray-#{$key} {
+//         background-color: $value !important;
+//     }
+
+//     .text-gray-#{$key} {
+//         color: $value !important;
+//     }
+// }

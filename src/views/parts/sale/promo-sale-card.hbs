@@ -1,0 +1,24 @@
+<a href="#" class="promo-sale-card {{class}}">
+    <div class="promo-sale-card__left-content">            
+        <p class="promo-sale-card__title">
+            {{{title}}}
+        </p>
+
+        <div class="promo-sale-card__sale-procent-wrap {{colorClass}}">
+            <span>До</span>
+            <span class="promo-sale-card__sale-procent">
+                -{{sale-procent}}%
+            </span>
+        </div>
+    </div>
+
+    <div class="promo-sale-card__img-wrap">
+        <picture>
+            <source type="image/webp" srcset="
+                img/promo/{{img-name}}.webp    1x,
+                img/promo/{{img-name}}@2x.webp 2x
+            " />
+            <img src="img/promo/{{img-name}}.png" srcset="img/promo/{{img-name}}@2x.png 2x" alt="sale" />
+        </picture>
+    </div>
+</a>

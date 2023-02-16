@@ -1,0 +1,75 @@
+<section class="section-main container splide splide--sale mb-xxl-7">
+    <h2 class="section-main__title mb-0_5 mb-lg-0">Распродажа</h2>
+
+    <div class="row row-cols-auto align-items-end g-2 mb-2_5">
+        <div class="col">
+            <span class="badge badge--tab badge--active">Кольца</span>
+        </div>
+
+        <div class="col">
+            <span class="badge badge--tab">Серьги</span>
+        </div>
+
+        <div class="col">
+            <span class="badge badge--tab">Браслеты</span>
+        </div>
+
+        <div class="col">
+            <span class="badge badge--tab">Часы</span>
+        </div>
+
+        <div class="col ms-auto">
+            {{>./common/splide-arrows-title.hbs}}
+        </div>
+    </div>
+
+    <div class="splide__track-wrap mx-sm-n4 mb-4 mb-md-5 mb-lg-7 mb-xl-7_5">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    {{>./sale/product-sale-card img-name='sales-1' isSale=true price='41 000'}}
+                </li>
+
+                <li class="splide__slide">
+                    {{>./sale/product-sale-card img-name='sales-2' price='56 000'}}
+                </li>
+
+                <li class="splide__slide">
+                    {{>./sale/product-sale-card img-name='sales-3' price='37 500'}}
+                </li>
+
+                <li class="splide__slide">
+                    {{>./sale/product-sale-card img-name='sales-4' price='39 200'}}
+                </li>
+
+                <li class="splide__slide">
+                    {{>./sale/product-sale-card img-name='sales-1' price='37 500'}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splide splide--sale-promo">
+        <div class="splide__track">
+            <ul class="splide__list row  d-sm-flex flex-nowrap">
+                <li class="splide__slide col-sm-4">
+                    {{>./sale/promo-sale-card class="promo-sale-card--diamond" title="Скидки<br>на все украшения с
+                    бриллиантами" colorClass="bg-teal-700"
+                    sale-procent="50" img-name="promo-1"}}
+                </li>
+
+                <li class="splide__slide col-sm-4">
+                    {{>./sale/promo-sale-card title="Скидки<br>на кольца<br>и браслеты" colorClass="bg-red-600"
+                    sale-procent="40" img-name="promo-2"}}
+                </li>
+
+                <li class="splide__slide col-sm-4">
+                    {{>./sale/promo-sale-card class="promo-sale-card--engagement-rings" title="снижение цен<br>на
+                    обручальные кольца" colorClass="bg-orange-300"
+                    sale-procent="60" img-name="promo-3"}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>

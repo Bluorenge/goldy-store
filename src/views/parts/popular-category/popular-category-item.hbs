@@ -1,0 +1,13 @@
+<a href="#" class="popular-category-item">
+    <div class="popular-category-item__img-wrap">
+        <picture>
+            <source type="image/webp" srcset="
+                img/category/{{imgName}}.webp    1x,
+                img/category/{{imgName}}@2x.webp 2x
+            " />
+            <img src="img/category/{{imgName}}.png" srcset="img/category/{{imgName}}@2x.png 2x" alt="{{imgName}}" class="img-fluid" />
+        </picture>
+    </div>
+
+    <h4 class="popular-category-item__title">{{title}}</h4>
+</a>

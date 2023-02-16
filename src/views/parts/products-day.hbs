@@ -1,0 +1,27 @@
+<section class="section-main container splide splide--product-day-gallery mb-xxl-8">
+    <div class="row row-cols-auto align-items-end mb-2">
+        <div class="col">
+            <h2 class="section-main__title">Товар дня</h2>
+        </div>
+
+        <div class="col ms-auto">
+            {{>./common/splide-arrows-title.hbs}}
+        </div>
+    </div>
+
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                {{>./products-day/product-card.hbs}}
+            </li>
+
+            <li class="splide__slide">
+                {{>./products-day/product-card.hbs}}
+            </li>
+
+            <li class="splide__slide">
+                {{>./products-day/product-card.hbs}}
+            </li>
+        </ul>
+    </div>
+</section>

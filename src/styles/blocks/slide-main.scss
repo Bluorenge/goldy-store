@@ -1,0 +1,94 @@
+.slide-main {
+    @include bg-diamon;
+    background-color: $secondary;
+    background-position: -6.25rem 1.5rem;
+    background-size: 63%;
+    padding-left: 2rem;
+    height: 170px;
+
+    @include media-breakpoint-up(md) {
+        height: 360px;
+        padding-left: 4rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 410px;
+        padding-left: 7rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 460px;
+        padding-left: 8rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        height: 560px;
+    }
+
+    &__left-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 2rem;
+
+        @include media-breakpoint-up(md) {
+            padding-top: 6rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 10.5rem;
+        }
+    }
+
+    &__promo-sale {
+        margin-bottom: 0.5rem;
+        font-size: 10px;
+        font-family: $font-family-serif;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 12px;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &__promo-product {
+        margin-bottom: 1rem;
+        font-size: 14px;
+        font-family: $font-family-serif;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 1rem;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 2.5rem;
+            font-size: 1.5rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2rem;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 2.5rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 3.125rem;
+        }
+    }
+
+    &__right-content {
+        display: flex;
+        align-items: center;
+        max-height: 100%;
+    }
+}

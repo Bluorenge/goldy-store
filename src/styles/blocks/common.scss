@@ -1,0 +1,63 @@
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar-nav {
+    @include media-breakpoint-down(lg) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.nav-link {
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+        padding: 1.5rem 1rem !important;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding-left: 1.9125rem !important;
+        padding-right: 1.9125rem !important;
+    }
+}
+
+.field {
+    &__wrap {
+        position: relative;
+        height: 100%;
+    }
+
+    &__icon-wrap {
+        position: absolute;
+        top: calc(50% - 1rem / 2);
+        left: 1.625rem;
+        width: 1rem;
+        height: 1rem;
+
+        svg {
+            display: block;
+        }
+    }
+
+    &__input-text {
+        padding-left: 3.5rem;
+    }
+}
+
+.popover-body {
+    box-shadow: $box-shadow;
+}
+
+.popover-arrow {
+    top: 100%;
+}

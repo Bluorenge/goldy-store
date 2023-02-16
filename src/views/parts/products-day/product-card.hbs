@@ -1,0 +1,133 @@
+<div class="product-card row align-items-start">
+    <div class="col-md-5 me-xxl-6 splide splide--product-day-card-gallery product-card__gallery-wrap">
+        <div class="product-card__promo-badges-wrap">
+            <span class="product-card__promo-badge badge bg-gray-750">
+                New
+            </span>
+
+            <span class="product-card__promo-badge badge bg-yellow-600">
+                Хит
+            </span>
+
+            <span class="product-card__promo-badge badge bg-gray-700">
+                Sale
+            </span>
+        </div>
+
+        <div class="splide__track h-100">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="product-card__gallery-item">
+                        <picture>
+                            <source type="image/webp" srcset="
+                            img/product-day.webp    1x,
+                            img/product-day@2x.webp 2x
+                        " />
+                            <img src="img/product-day.png" srcset="img/product-day@2x.png 2x" class="img-fluid"
+                                alt="product-day" />
+                        </picture>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="product-card__gallery-item">
+                        <picture>
+                            <source type="image/webp" srcset="
+                            img/product-day.webp    1x,
+                            img/product-day@2x.webp 2x
+                        " />
+                            <img src="img/product-day.png" srcset="img/product-day@2x.png 2x" class="img-fluid"
+                                alt="product-day" />
+                        </picture>
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="product-card__gallery-item">
+                        <picture>
+                            <source type="image/webp" srcset="
+                            img/product-day.webp    1x,
+                            img/product-day@2x.webp 2x
+                        " />
+                            <img src="img/product-day.png" srcset="img/product-day@2x.png 2x" class="img-fluid"
+                                alt="product-day" />
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <svg width="10" height="16">
+                    <use href="img/svg/sprite.symbol.svg#arrow-left-tick"></use>
+                </svg>
+            </button>
+
+            <button class="splide__arrow splide__arrow--next">
+                <svg width="10" height="16">
+                    <use href="img/svg/sprite.symbol.svg#arrow-right-tick"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="col">
+        {{>../common/rating class="product-card__rating-wrap"}}
+
+        <div class="product-card__title-wrap">
+            <h4 class="product-card__title">Кольцо из золота с бриллиантами</h4>
+            <p class="product-card__vendore-code">
+                Артикул:
+                <span class="product-card__vendore-code-number">1012076</span>
+            </p>
+        </div>
+
+        <div class="product-card__price-countdown-wrap row row-cols-auto g-0">
+            {{>../common/price class="col product-card__price-wrap price price--lg"}}
+            {{>../common/countdown class="col"}}
+        </div>
+
+        {{>./color-options class="product-card__colors-wrap"}}
+        {{>./sizes-options class="product-card__sizes-wrap"}}
+
+        <div class="row row-cols-auto product-card__bottom-wrap">
+            <div class="col product-card__btn-group-wrap">
+                <button class="btn btn-lg btn-primary w-100 mb-0_625">в корзину</button>
+                <button class="btn btn-lg btn-secondary w-100">купить в 1 клик</button>
+            </div>
+
+            <div class="col product-card__actions-wrap">
+                <button class="product-card__action-wrap hover-gray-500 active-red-600">
+                    <div class="product-card__action-icon-wrap">
+                        <svg width="24" height="24">
+                            <use href="img/svg/sprite.symbol.svg#heart_fill"></use>
+                        </svg>
+                    </div>
+
+                    <span>Сохранить</span>
+                </button>
+
+                <button class="product-card__action-wrap hover-gray-500">
+                    <div class="product-card__action-icon-wrap">
+                        <svg width="20" height="20">
+                            <use href="img/svg/sprite.symbol.svg#chart"></use>
+                        </svg>
+                    </div>
+
+                    <span>Сравнить</span>
+                </button>
+
+                <button class="product-card__action-wrap hover-gray-500">
+                    <div class="product-card__action-icon-wrap">
+                        <svg width="20" height="20">
+                            <use href="img/svg/sprite.symbol.svg#share"></use>
+                        </svg>
+                    </div>
+
+                    <span>Поделиться</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
